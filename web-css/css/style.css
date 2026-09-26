@@ -8,7 +8,7 @@ body {
 .container {
     background-color: white;
     margin: 0 auto;
-    width: 800%px;
+    width: 800px;
 }
 /* mengatur jarak dalam header */
 .header {
@@ -19,7 +19,7 @@ body {
 /* mengatur judul */
 .header .judul {
     font-size: 40px;
-    font-weight: 40px;
+    font-weight: bold;
     margin-bottom: 5px;
 }
 /* untuk navigasi atau menu atas */
@@ -44,4 +44,59 @@ body {
     color: white;
     transition: 0.5s;
 }
-
+/* menghilangkan garis bawah link */
+.nav li a {
+    text-decoration: none;
+    color: navy;
+}
+/* ketika navigasi disorot mouse */
+.nav li:hover {
+    background-color: lightblue;
+    color: white;
+}
+/* untuk css benner */
+.banner {
+    height: 500px;
+    /* memotong gambang yang melebehi 300px */
+    overflow: hidden;
+    background-color: skyblue;
+    background-image: url('D:\WEB LINDA 2A\web-css\img\banner.jpeg');
+    /* atur ukuran gambar */
+    background-size: cover;
+    /* mengatur posisi gambar horizontal dan vertikal */
+    background-position: 0px - 150px;
+    /* mengatur garis tepi tebal jenis warna */
+    border-top: 5px solid navy;
+    border-bottom: 5px solid skyblue;
+}
+/* untuk isi */
+.isi {
+    padding: 20px;
+}
+.isi h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.isi .penulis {
+    font-size: 14px;
+    margin-top: -10px;
+}
+.isi .penulis a {
+    text-decoration: none;
+    color: skyblue;
+}
+.isi p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* untuk footer */
+.footer {
+    background-color: navy;
+    height: 50px;
+    padding: 2px;
+}
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
