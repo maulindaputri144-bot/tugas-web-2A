@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasir</title>
+  </head>
+
+  <body>
+    <h1>Kasir Sederhana</h1>
+
+    <script type="text/javascript">
+      // Memasukkan nama barang
+      let nama = prompt("Masukkan nama barang: ");
+
+      // Memasukkan harga barang
+      let harga = prompt("Masukkan harga barang: ");
+
+      // Memasukkan jumlah barang
+      let qty = prompt("Masukkan jumlah beli (qty): ");
+
+      // Mengubah harga dan qty menjadi angka
+      harga = parseFloat(harga);
+      qty = parseFloat(qty);
+
+      // Menghitung total belanja
+      let total = harga * qty;
+
+      // Menentukan diskon
+      let diskon = 0;
+
+      if (total > 50000) {
+        diskon = (total * 10) / 100;
+      }
+
+      // Menghitung total pembayaran
+      let pembayaran = total - diskon;
+
+      // Membuat tampilan struk
+      let struk =
+        "++++++++++++++++++++++++++++\n" +
+        "+       STRUK BELANJA      +\n" +
+        "++++++++++++++++++++++++++++\n" +
+        "+ Nama        : " +
+        nama +
+        "\n" +
+        "+ Harga       : " +
+        harga +
+        "\n" +
+        "+ Qty         : " +
+        qty +
+        "\n" +
+        "+ Total       : " +
+        total +
+        "\n" +
+        "+ Diskon      : " +
+        diskon +
+        "\n" +
+        "+ Pembayaran  : " +
+        pembayaran +
+        "\n" +
+        "++++++++++++++++++++++++++++";
+
+      // Menampilkan hasil pada halaman
+      document.write("<h2>Struk Belanja</h2>");
+      document.write("Nama Barang : " + nama + "<br>");
+      document.write("Harga Barang : " + harga + "<br>");
+      document.write("Jumlah Beli : " + qty + "<br>");
+      document.write("Total Belanja : " + total + "<br>");
+      document.write("Diskon : " + diskon + "<br>");
+      document.write("Pembayaran : " + pembayaran + "<br>");
+    </script>
+  </body>
+</html>
